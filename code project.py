@@ -1,5 +1,7 @@
 from transformers import pipeline
+from datasets import load_dataset
 
+ds = load_dataset("LabHC/bias_in_bios")
 classifier = pipeline("text-classification")
 
 texts = [
